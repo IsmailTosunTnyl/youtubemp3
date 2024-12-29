@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube to MP3 Downloader</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube to MP3 Downloader</h1>
+        <div class="input-container">
+            <input type="text" id="youtubeUrl" placeholder="Paste YouTube URL here">
+            <button onclick="convertMedia()">Convert</button>
+        </div>
+        <div id="thumbnail" class="thumbnail-container hidden"></div>
+        <div class="format-container">
+            <select id="formatSelect">
+                <option value="audio">Audio Only (MP3)</option>
+                <option value="video">Video with Audio (MP4)</option>
+            </select>
+            <select id="qualitySelect">
+                <option value="highest">Highest Quality</option>
+                <option value="lowest">Lowest Quality</option>
+            </select>
+        </div>
+        <div id="result" class="result-container"></div>
+        <div id="progress" class="progress-container hidden">
+            <div class="progress-bar"></div>
+            <div class="progress-text">0%</div>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
